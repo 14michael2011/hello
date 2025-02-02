@@ -13,6 +13,7 @@
             font-family: Arial, sans-serif;
             overflow: hidden;
             flex-direction: column;
+            margin: 0;
         }
         .container {
             text-align: center;
@@ -21,19 +22,24 @@
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             margin-bottom: 30px;
+            width: 80%;
+            max-width: 500px;
         }
         h1 {
             color: red;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
         .buttons {
             margin-top: 20px;
         }
         .btn {
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 18px;
             border: none;
             cursor: pointer;
             border-radius: 10px;
+            margin: 5px;
         }
         .yes {
             background-color: red;
@@ -42,7 +48,6 @@
         .no {
             background-color: gray;
             color: white;
-            position: absolute;
         }
         .hearts {
             position: fixed;
@@ -70,14 +75,31 @@
         }
         .pompompurin-image {
             margin-top: 20px;
-            width: 150px;
+            width: 100%;
             height: auto;
+            max-width: 150px;
         }
         .footer {
             font-size: 14px;
             color: gray;
             margin-top: 20px;
         }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.3em;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            .pompompurin-image {
+                width: 80%;
+                max-width: 120px;
+            }
+        }
+
     </style>
 </head>
 <body>
